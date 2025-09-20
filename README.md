@@ -1,4 +1,4 @@
-# Flutter Auth App
+# Maestro
 
 Una aplicación Flutter completa con autenticación de usuarios integrada con Supabase.
 
