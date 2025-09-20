@@ -1,16 +1,110 @@
-# flutter_auth_app
+# Flutter Auth App
 
-A new Flutter project.
+Una aplicación Flutter completa con autenticación de usuarios integrada con Supabase.
 
-## Getting Started
+## ✨ Características
 
-This project is a starting point for a Flutter application.
+- **Autenticación completa**: Login, registro y recuperación de contraseña
+- **Integración con Supabase**: Backend as a Service para autenticación
+- **UI moderna**: Interfaz de usuario limpia y responsiva
+- **Buenas prácticas**: Código siguiendo las mejores prácticas de Flutter
+- **Análisis estático**: Sin warnings o errores de linting
+- **Multiplataforma**: Compatible con Android, iOS, Web, Windows, Mac y Linux
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Inicio rápido
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Prerrequisitos
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter SDK (versión 3.9.2 o superior)
+- Una cuenta en [Supabase](https://supabase.com)
+
+### Configuración
+
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/lider16/maestroservicios.git
+   cd flutter_auth_app
+   ```
+
+2. **Instala las dependencias**:
+   ```bash
+   flutter pub get
+   ```
+
+3. **Configura Supabase**:
+   - Crea un proyecto en Supabase
+   - Copia tu URL del proyecto y API key
+   - Actualiza `lib/constants.dart` con tus credenciales
+
+4. **Ejecuta la aplicación**:
+   ```bash
+   flutter run
+   ```
+
+## 📱 Pantallas
+
+### Login
+- Inicio de sesión con email y contraseña
+- Navegación a registro y recuperación de contraseña
+
+### Registro
+- Creación de nueva cuenta de usuario
+- Validación de contraseñas
+- Confirmación por email (configurable en Supabase)
+
+### Recuperación de contraseña
+- Envío de enlace de recuperación por email
+- Navegación de vuelta al login
+
+### Home
+- Página de bienvenida con mensaje motivacional
+- Accesible solo después de autenticación
+
+## 🛠️ Desarrollo
+
+### Análisis de código
+```bash
+flutter analyze
+```
+
+### Formateo
+```bash
+dart format lib/
+```
+
+### Pruebas
+```bash
+flutter test
+```
+
+## 📋 Configuración de Supabase
+
+1. Ve a tu proyecto en Supabase
+2. Ve a Authentication > Settings
+3. Configura:
+   - **Site URL**: Tu dominio (para desarrollo: `http://localhost:3000`)
+   - **Redirect URLs**: Agrega las URLs permitidas
+   - **Enable email confirmations**: Según tus necesidades
+
+## 🤝 Contribución
+
+1. Fork el proyecto
+2. Crea tu rama de feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## 🆘 Soporte
+
+Si tienes problemas:
+1. Revisa la documentación de [Supabase](https://supabase.com/docs)
+2. Consulta la documentación de [Flutter](https://flutter.dev/docs)
+3. Abre un issue en este repositorio
+
+---
+
+¡Feliz coding! 🚀
